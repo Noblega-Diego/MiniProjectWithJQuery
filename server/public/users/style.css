@@ -1,0 +1,91 @@
+body{
+    margin: 0px;
+}
+:root{
+    --primary: rgb(23, 184, 248);
+    --light: rgb(252, 252, 252);
+    --text-color: rgb(68, 68, 68);
+    --text-second-color: rgb(107, 107, 107); 
+}
+
+main{
+    background: var(--primary);
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.listcart{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 70%;
+    height: 100%;
+}
+
+.cartflat{
+    display: flex;
+    background-color: var(--light);
+    border-radius: 10px;
+    width: 100%;
+    min-width: 364px;
+    height: 85px;
+    margin: 10px 0px;
+}
+
+.cartflat .left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 80px;
+    border-right: 1px solid rgb(228, 228, 228);
+}
+.cartflat .left .circle{
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    background-color: turquoise;
+    text-align: center;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cartflat .left .circle p{
+    margin: 0px;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.cartflat .right{
+    padding-left: 10px;
+    width: 100%;
+    padding: 4px;
+    padding-left: 10px;
+}
+.cartflat .right p{
+    margin: 4px 0px;
+}
+.cartflat .right .name{
+    margin: 8px 0px;
+    font-weight: bold;
+    color: var(--text-color);
+    text-transform: capitalize;
+}
+.cartflat .right .item{
+    margin: 8px 0px;
+    color: var(--text-color);
+}
+.cartflat .right .value{
+    margin: 8px 0px;
+    font-weight: normal;
+    color: var(--text-second-color);
+}
+
+.cartflat:hover{
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+}

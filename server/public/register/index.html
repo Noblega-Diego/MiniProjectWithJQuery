@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Efects Form with JQuery</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <div class="form-content">
+                <h1>Create a new account</h1>
+            <form>
+                <div class="control">
+                    <label class="label" for="in_name">name</label>
+                    <input class="input" type="text" name="name" id="in_name">
+                    <span class="warning-message active"></span>
+                </div>
+                <div class="control">
+                    <label class="label" for="in_lastname">last name</label>
+                    <input class="input" type="text" name="name" id="in_lastname">
+                    <span class="warning-message active"></span>
+                </div>
+                <div class="control">
+                    <label class="label" for="in_email">email</label>
+                    <input class="input" type="email" name="name" id="in_email">
+                    <span class="warning-message active"></span>
+                </div>
+                <div class="control">
+                    <label class="label" for="in_password">password</label>
+                    <input class="input" type="password" name="password" id="in_password">
+                    <span class="warning-message active"></span>
+                </div>
+                <div>
+                    <span id="formMessaje" class="warning-message active"></span>
+                </div>
+                <button>Sign Up</button>
+            </form>
+        </div>
+    </main>
+    <script src="../jquery-3.6.0.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
